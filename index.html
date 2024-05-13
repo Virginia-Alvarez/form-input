@@ -8,17 +8,21 @@
     <title>Form input wave</title>
 </head>
 <body>
-    <section class="container">
+    <div class="container">
         <h1 class="title">Please login</h1>
-        <form action="/" method="post" class="form">
-            <label for="POST-email" class="label">Email</label>
-            <input type="text" name="email" id="POST-email" class="input">
-            <label for="POST-pass" class="label">Password</label>
-            <input type="password" name="pass" id="POST-pass" class="input">
+        <form>
+            <div class="form-control">
+                <input type="text" name="email" id="POST-email" required>
+                <label for="POST-email">Email</label>
+            </div>
+            <div class="form-control">
+                <input type="password" name="pass" id="POST-pass" required>
+                <label for="POST-pass">Password</label>
+            </div>
             <input type="submit" value="Login" class="btn">
         </form>
         <p class="paragraph">Don't have an account? <a href="#" class="register">Register</a></p>
-    </section>
+    </div>
     <script src="./js/main.js"></script>
 </body>
 </html>
